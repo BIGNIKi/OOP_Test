@@ -1,6 +1,8 @@
 package org.models;
 
 public class Player {
+    private int _a;
+
     public Player() {
 
     }
