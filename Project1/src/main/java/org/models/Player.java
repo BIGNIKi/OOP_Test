@@ -1,7 +1,12 @@
 package org.models;
 
+import java.util.Objects;
+
 public class Player {
-    private int _a;
+    public Integer a = 1;
+    private int _b = 5;
+
+    private String c = "sdfsdf";
 
     public Player() {
 
@@ -12,9 +17,18 @@ public class Player {
         return a + b;
     }
 
-    public static String DoSth()
+/*    @Override
+    public boolean equals(Object o)
     {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Player player = (Player) o;
+        return _b == player._b && Objects.equals(a, player.a) && Objects.equals(c, player.c);
+    }*/
 
-        return "";
+    @Override
+    public int hashCode()
+    {
+        return 5;
     }
 }
