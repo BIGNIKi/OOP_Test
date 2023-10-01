@@ -8,6 +8,19 @@ public class PlayerTest {
     @Test
     public void GenerateNumberTest()
     {
-        Assertions.assertEquals(Player.Sum(1, 3),  4);
+        Assertions.assertEquals(Player.Sum(1, 5),  4);
+
+    }
+    @Test
+    public void GenerateNumberTest1()
+    {
+
+        Assertions.assertEquals(Player.Sum(1, 8),  4);
+    }
+    @Test
+    public void GenerateNumberTest2()
+    {
+
+        Assertions.assertEquals(Player.Sum(1, 8),  4);
     }
 }

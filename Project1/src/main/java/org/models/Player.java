@@ -1,15 +1,17 @@
 package org.models;
 
-import java.util.Objects;
+import org.interfaces.Moveable;
 
-public class Player {
+public final class Player extends Enemy implements Moveable
+{
     public Integer a = 1;
     private int _b = 5;
 
     private String c = "sdfsdf";
 
     public Player() {
-
+        super(5);
+        items.add(100);
     }
 
     public static int Sum(int a, int b)
@@ -31,4 +33,22 @@ public class Player {
     {
         return 5;
     }
+
+    @Override
+    public void Move()
+    {
+        System.out.println();
+    }
+
+    @Override
+    public int Push(int a)
+    {
+        return 0;
+    }
+
+/*    @Override
+    protected void Breath()
+    {
+        System.out.println("I breath");
+    }*/
 }

@@ -1,8 +1,5 @@
-package org.models;
+package org.qwertt;
 
-/**
- * Some documentation for HeapSort class
- */
 public class HeapSort
 {
     public static int[] sort(int[] array)

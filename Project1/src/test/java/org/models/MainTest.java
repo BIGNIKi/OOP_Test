@@ -17,13 +17,13 @@ public class MainTest
         assertArrayEquals(input, expected);
     }
 
-    static Stream<Arguments> generateData()
+    private static Stream<Arguments> generateData()
     {
         return Stream.of(
-                org.junit.jupiter.params.provider.Arguments.arguments(Main.heapsort(new int[]{3, 1, 2}), new int[]{1, 2, 3}),
-                org.junit.jupiter.params.provider.Arguments.arguments(Main.heapsort(new int[]{}), new int[]{}),
-                org.junit.jupiter.params.provider.Arguments.arguments(Main.heapsort(new int[]{2, 1, 6, 4, 5, 3, 7}), new int[]{1, 2, 3, 4, 5, 6, 7}),
-                org.junit.jupiter.params.provider.Arguments.arguments(Main.heapsort(new int[]{-1, -2, -3}), new int[]{-3, -2, -1})
+                Arguments.arguments(HeapSort.sort(new int[]{3, 1, 2}), new int[]{1, 2, 3}),
+                Arguments.arguments(HeapSort.sort(new int[]{}), new int[]{}),
+                Arguments.arguments(HeapSort.sort(new int[]{2, 1, 6, 4, 5, 3, 7}), new int[]{1, 2, 3, 4, 5, 6, 7}),
+                Arguments.arguments(HeapSort.sort(new int[]{-1, -2, -3}), new int[]{-3, -2, -1})
         );
     }
 }
